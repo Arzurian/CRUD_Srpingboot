@@ -1,0 +1,27 @@
+management:
+   endpoints:
+      web:
+         exposure:
+           include: '*'
+        
+server.port: 8080
+
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    #url: jdbc:h2:file:/data/demo
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+
+
+mensaje:
+   entorno: 'Entorno de developmen'
+
+course:
+  message: 'Aplicacion desde developmen'
+  default: "mensaje por defecto"

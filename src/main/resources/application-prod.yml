@@ -1,0 +1,15 @@
+management:
+   endpoints:
+      web:
+         exposure:
+           include: '*'
+        
+server.port: 8080
+
+course:
+  message: 'Aplicacion desde produccion'
+  default: "mensaje por defecto"
+  
+mensaje:
+   entorno: 'Entorno de produccion'
+

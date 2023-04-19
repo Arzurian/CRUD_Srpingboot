@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS usuarios;
+
+CREATE TABLE usuarios (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    birthDate DATE
+);

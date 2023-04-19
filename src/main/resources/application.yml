@@ -1,0 +1,34 @@
+spring:
+  #profiles:
+  #  active:
+  #  - dev
+  datasource:
+    url: jdbc:h2:mem:mydb
+    #url: jdbc:h2:file/data/test
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: validate
+      default_schema: mydb
+    
+  h2:
+    console.enabled: true
+
+#management:
+#   endpoints:
+#      web:
+#         exposure:
+#           include: '*'
+        
+server.port: 8080
+
+
+
+
+
+course:
+  message: 'Hello world! desde el .yml'
+  default: "mensaje por defecto"
